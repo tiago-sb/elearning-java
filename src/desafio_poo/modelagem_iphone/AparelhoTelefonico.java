@@ -1,5 +1,6 @@
 package desafio_poo.modelagem_iphone;
 
+import java.util.Objects;
 import java.util.Scanner;
 public class AparelhoTelefonico {
   private String numero_celular;
@@ -72,4 +73,17 @@ public class AparelhoTelefonico {
       }
     }
   }
+  
+  public boolean equals(Object o) {
+    if(this == o) {
+      return true;
+    }
+    if(o == null || this.getClass() != o.getClass()) {
+      return false;
+    }
+    
+    AparelhoTelefonico aparelho = (AparelhoTelefonico) o;  
+    return Objects.equals(getNumero_celular(), aparelho.getNumero_celular());
+ }
+ 
 }

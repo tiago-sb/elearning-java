@@ -3,7 +3,7 @@ package desafio_poo.modelagem_iphone;
 import java.util.Scanner;
 public class Principal {
   static Scanner scan = new Scanner(System.in);
-  
+ 
   public static int menu_sistema() {
     System.out.println("=== Escolha um app ===");
     System.out.println("1. Spotfy");
@@ -15,7 +15,6 @@ public class Principal {
     return escolha;
   }
   public static void main(String[] args) {
-    
     
     System.out.println("=======================================");
     System.out.println("=== Bem Vindo(a) ao seu novo iphone ===");
